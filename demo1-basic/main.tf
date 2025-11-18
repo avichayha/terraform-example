@@ -34,7 +34,7 @@ resource "aws_s3_bucket" "demo_bucket" {
 resource "aws_instance" "demo_instance" {
   ami           = data.aws_ami.al2023.id
   instance_type = "t3.micro"
-  tags = { Name = "TerraformBasicDemo" }
+  tags = { Name = "TerraformBasicDemoChanged" }
 }
 
 output "bucket_name"  { value = aws_s3_bucket.demo_bucket.bucket }
